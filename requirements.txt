@@ -1,0 +1,6 @@
+flask-restful
+python-dotenv
+psycopg2-binary
+Flask-JWT-Extended
+flask-cors
+bcrypt
