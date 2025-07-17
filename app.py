@@ -10,6 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 load_dotenv()
 CORS()
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 app.config['PORT'] = os.getenv('PORT')
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECERT_KEY')
