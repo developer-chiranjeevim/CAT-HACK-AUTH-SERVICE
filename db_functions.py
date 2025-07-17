@@ -51,7 +51,7 @@ class Database:
             if response:
                 stored_hashed_password = response[0]
                 if self.verify_password(password, stored_hashed_password):
-                    return True
+                    return operator_id
                 else:
                     return False
             else:
